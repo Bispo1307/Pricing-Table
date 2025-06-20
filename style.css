@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --dark-blue: #213140;
+    --yellow: #f6b300;
+    --green: #109d59;
+    --red: #dd4337;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-blue);
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    margin-top: 34px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 10px 0 10px;
+    border: 1px solid var(--dark-blue);
+}
+
+.card {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 250px;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+
+h2 {
+    color: var(--white);
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#item1 {
+    background-color: var(--white);
+}
+
+#item2 {
+    background-color: var(--white);
+}
+
+#item3 {
+    background-color: var(--white);
+}
+
+#item1 h2 {
+    background-color: var(--yellow);
+}
+
+#item2 h2 {
+    background-color: var(--red);
+}
+
+#item3 h2 {
+    background-color: var(--green);
+}
+
+#item1 img {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--yellow);
+    margin-left: 90px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#item2 img {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--red);
+    margin-left: 90px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#item3 img {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--green);
+    margin-left: 90px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span {
+    text-align: center;
+    border-top: 2px dashed gray;
+    padding-top: 30px;
+}
+
+.card h2.price {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 450px) {
+    .container {
+        display: block;
+        flex-direction: column;
+        margin: 40px 10px 20px 10px;
+    }
+
+    .card {
+        margin: 20px auto;
+        height: 500px;
+        width: 250px;
+    }
+}
